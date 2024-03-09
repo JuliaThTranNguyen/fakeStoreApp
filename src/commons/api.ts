@@ -1,0 +1,1 @@
+export const FAKE_STORE_URL = 'https://api.escuelajs.co/api/v1';

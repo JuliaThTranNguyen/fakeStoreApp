@@ -1,57 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { useMemo } from "react";
+import { ThemeProvider } from "@emotion/react";
+import { CssBaseline } from "@mui/material";
+import { RouterProvider } from "react-router-dom";
+
+import router from "./commons/config/router";
+import useColorTheme from "./hooks/useColorTheme";
+import createThemeMode from "./commons/config/theme";
+import CartOverlayContextProvider from "./components/cart/CartOevrlayContextProvider";
+import { ToasterContextProvider } from "./components/layout/ToasterContextProvider";
 
 function App() {
+  const { colorTheme } = useColorTheme();
+  const theme = useMemo(() => createThemeMode(colorTheme), [colorTheme]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <ToasterContextProvider>
+        <CartOverlayContextProvider>
+          <RouterProvider router={router} />
+        </CartOverlayContextProvider>
+      </ToasterContextProvider>
+    </ThemeProvider>
   );
 }
 
