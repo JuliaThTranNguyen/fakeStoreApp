@@ -1,13 +1,14 @@
 import { Box, styled } from '@mui/material';
 import defaultBackgroundColor from '../layout/defaultBackgroundColor';
 
-const StyledInfoContainer = styled(Box)`
+const StyledProfileContainer = styled(Box)`
+  margin-top: 4em;
   background-color: ${({ theme }) => defaultBackgroundColor(theme)};
-  display: flex;
-  padding: 2em;
   border-radius: 1em;
+  padding: 2em;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 `;
 
-export default StyledInfoContainer;
+export default StyledProfileContainer;

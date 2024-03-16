@@ -1,14 +1,13 @@
+
 // NAVIGATION
 export const NAV_LINKS = [
-    { href: "/", key: "home", label: "Home" },
+    { href: "/", key: "Home", label: "Home" },
     { href: "/", key: "Categories", label: "Categories" },
-    { href: "/", key: "Men's", label: "Man's" },
-    { href: "/", key: "Woman's", label: "Woman's" },
-    { href: "/", key: "Perfume", label: "Perfume" },
-    { href: "/", key: "Jewelry", label: "Jewelry" },
-    { href: "/", key: "Blog", label: "Blog" },
+    { href: "/", key: "All Books", label: "All Books" },
+    { href: "/", key: "Profile", label: "Profile" },
+    { href: "/", key: "Daily updates", label: "Daily updates" },
     { href: "/", key: "Deals", label: "Deals" },
-    { href: "/", key: "Contact_us", label: "Contact us" },
+    { href: "/", key: "Get help ?", label: "Contact us" },
   ];
   
   // HERO SECTION
@@ -44,33 +43,44 @@ export const NAV_LINKS = [
   ]
   
   // FOOTER SECTION
-  export const FOOTER_LINKS = [
+  export const FOOTER_DETAILS = [
     {
       title: "Learn More",
       links: [
-        "About Travel Agency",
+        "About E-Library Agency",
         "Press Releases",
         "Environment",
-        "Jobs",
+        "Carreer Sites",
         "Privacy Policy",
         "Contact Us",
       ],
-    },
-    {
-      title: "Our Community",
-      links: ["Climbing workshop", "Hiking workshop", "Travel workshop"],
-    },
+    }
   ];
-  
-  export const FOOTER_CONTACT_INFO = {
-    title: "Contact Us",
+
+  export const FOOTER_RESOURCES = {
+    title: "FrontEnd Resources",
     links: [
-      { label: "Admin Officer", value: "050-446-5589" },
-      { label: "Email Officer", value: "shobie.agency@hotmail.com" },
+      { label: "Platzi Fake Store API", value: "https://fakeapi.platzi.com/" },
+      { label: "MUI & Styled Components", value: "https://mui.com/" },
+      { label: "Adding Typescript to a React App", value: "https://create-react-app.dev/docs/adding-typescript/" },
+      { label: "Redux Toolkit Typescript Quick Start", value: "https://redux-toolkit.js.org/tutorials/typescript" },
+      { label: "RTK QUery Qiuck Start", value: "https://redux-toolkit.js.org/tutorials/rtk-query" },
     ],
   };
-  
-  export const SOCIALS = {
-    title: "Social",
-    links: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/youtube.svg"],
-  };
+
+  export const FOOTER_COMMUNITY = [
+    {
+      title: "Our Community",
+      links: ["Reading workshop", "Meditation workshop", "Study workshop"],
+    },
+  ];
+
+  export const FOOTER_EXPLORE = [
+    {
+      title: "Explore",
+      links: ["Hot Deals", "Summer Collection", "Winter Collection", "Sell your own stuffs"],
+    },
+  ];
+
+
+

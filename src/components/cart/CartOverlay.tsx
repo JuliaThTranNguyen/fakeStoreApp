@@ -2,7 +2,7 @@ import { CloseOutlined } from '@mui/icons-material';
 import { Box, Container, IconButton, Slide } from '@mui/material';
 import useCartOverlay from '../../hooks/useCartOverlay';
 import StyledCartOverlayContainer from '../../commons/styles/cart/StyledCartOverlayContainer';
-import Title from '../../commons/styles/Title';
+import Title from '../../commons/styles/layout/Title';
 import CartItemsList from './CartItemsList';
 
 export default function CartOverlay() {

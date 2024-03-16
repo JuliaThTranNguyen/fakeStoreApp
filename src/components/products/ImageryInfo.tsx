@@ -4,7 +4,7 @@ import { TransitionGroup } from 'react-transition-group';
 import _ from 'lodash';
 import { useCallback, useMemo } from 'react';
 import getRandomImages from '../../commons/utils/product/getRandomImages';
-import Title from '../../commons/styles/Title';
+import Title from '../../commons/styles/layout/Title';
 
 const MAX_IMAGES_ON_PRODUCT_ALLOWED = 4;
 

@@ -5,7 +5,7 @@ import {
   import { Button, Typography } from '@mui/material';
   import { useNavigate } from 'react-router-dom';
   
-  import StyledCenterContainer from '../commons/styles/products/StyledCenterContainer';
+  import StyledCenterContainer from '../commons/styles/layout/StyledCenterContainer';
   
   export default function ErrorPage() {
     const navigate = useNavigate();

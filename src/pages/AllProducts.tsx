@@ -6,7 +6,7 @@ import _ from 'lodash';
 
 import { useGetProductByIdQuery } from '../commons/config/fakeStoreApi';
 import SingleProduct from '../components/products/SingleProduct';
-import StyledCenterContainer from '../commons/styles/products/StyledCenterContainer';
+import StyledCenterContainer from '../commons/styles/layout/StyledCenterContainer';
 
 const AllProducts = () => {
   const { id: productId } = useParams<{ id: string }>();

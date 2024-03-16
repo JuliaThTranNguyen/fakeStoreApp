@@ -9,7 +9,7 @@ import _ from 'lodash';
 
 import CategoryOptions from '../categories/CategoryOptions';
 import StyledFilterContainer from '../../commons/styles/products/StyledFilterContainer';
-import Title from '../../commons/styles/Title';
+import Title from '../../commons/styles/layout/Title';
 import { selectFilters, setFilters } from '../../redux/reducers/productsSlice';
 import { ProductFiltersType } from '../../types/product';
 import { RootState } from '../../redux/store';

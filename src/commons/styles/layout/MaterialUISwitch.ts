@@ -1,9 +1,10 @@
-import { styled, Switch } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Switch } from '@mui/material';
 import defaultBackgroundColor from './defaultBackgroundColor';
 
-const UISwitch = styled(Switch)(({ theme }) => ({
-  width: 62,
-  height: 34,
+const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+  width: 58,
+  height: 28,
   padding: 7,
   '& .MuiSwitch-switchBase': {
     margin: 1,
@@ -25,11 +26,11 @@ const UISwitch = styled(Switch)(({ theme }) => ({
   },
   '& .MuiSwitch-thumb': {
     backgroundColor:
-      theme.palette.mode === 'dark'
-        ? theme.palette.primary.dark
-        : theme.palette.primary.main,
-    width: 32,
-    height: 32,
+    theme.palette.mode === 'dark'
+      ? theme.palette.primary.dark
+      : theme.palette.primary.main,
+    width: 28,
+    height: 28,
     '&:before': {
       content: "''",
       position: 'absolute',
@@ -47,8 +48,8 @@ const UISwitch = styled(Switch)(({ theme }) => ({
   '& .MuiSwitch-track': {
     opacity: 1,
     backgroundColor: defaultBackgroundColor(theme, 2),
-    borderRadius: 20 / 2,
+    borderRadius: 12 / 2,
   },
 }));
 
-export default UISwitch;
+export default MaterialUISwitch;

@@ -1,6 +1,6 @@
 import { Container, Grid } from '@mui/material';
 
-import Title from '../../commons/styles/Title';
+import Title from '../../commons/styles/layout/Title';
 import ProductList from './ProductList';
 import ProductsFilter from './ProductsFilter';
 import ProductsSortingOptions from './ProductsSortingOptions';

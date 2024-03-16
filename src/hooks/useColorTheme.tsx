@@ -1,12 +1,12 @@
 import { createContext, Dispatch, SetStateAction, useContext } from "react";
 
-export type ColorTheme = "light" | "dark";
+export type ColorTheme = "dark" | "light";
 
 export const ColorContext = createContext<{
   colorTheme: ColorTheme;
   setColorTheme: Dispatch<SetStateAction<ColorTheme>>;
 }>({
-  colorTheme: "light",
+  colorTheme: "dark",
   setColorTheme: () => {},
 });
 

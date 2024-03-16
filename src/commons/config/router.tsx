@@ -5,6 +5,7 @@ import Layout from '../../components/layout/Layout';
 import Catalog from '../../pages/Catalog';
 import ErrorPage from '../../pages/ErrorPage';
 import AllProducts from '../../pages/AllProducts';
+import Profile from '../../pages/Profile';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '*',
         element: <ErrorPage />,
+      },
+      {
+        path: '/profile',
+        element: <Profile />,
       },
     ],
   },

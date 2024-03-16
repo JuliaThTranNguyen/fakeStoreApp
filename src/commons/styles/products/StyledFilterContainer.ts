@@ -1,5 +1,5 @@
 import { styled, Box } from '@mui/material';
-import defaultBackgroundColor from '../defaultBackgroundColor';
+import defaultBackgroundColor from '../layout/defaultBackgroundColor';
 
 const StyledFilterContainer = styled(Box)`
   background: ${({ theme }) => defaultBackgroundColor(theme)};

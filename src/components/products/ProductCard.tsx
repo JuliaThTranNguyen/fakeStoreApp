@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import CartControls from "../cart/CartControl";
-import defaultBackgroundColor from "../../commons/styles/defaultBackgroundColor";
+import defaultBackgroundColor from "../../commons/styles/layout/defaultBackgroundColor";
 import CategoryBadge from "../categories/CategoryBadge";
 import { ProductType } from "../../types/product";
 import { RootState } from "../../redux/store";

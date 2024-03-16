@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import { RootState } from '../../redux/store';
 import { selectItemQuantityInCart } from '../../redux/reducers/cartSlice';
-import Title from '../../commons/styles/Title';
+import Title from '../../commons/styles/layout/Title';
 import StyledInfoContainer from '../../commons/styles/products/StyledInfoContainer';
 import { ProductType } from '../../types/product';
 import CartControls from '../cart/CartControl';

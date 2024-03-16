@@ -1,5 +1,5 @@
 import { Box, styled } from '@mui/material';
-import defaultBackgroundColor from '../defaultBackgroundColor';
+import defaultBackgroundColor from '../layout/defaultBackgroundColor';
 
 const StyledCartSummary = styled(Box)`
   display: flex;

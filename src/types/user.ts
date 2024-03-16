@@ -12,7 +12,7 @@ export type JwtType = {
     id: number;
     email: string;
     name: string;
-    role: 'user' | 'admin';
+    role: 'customer' | 'admin';
     avatar: string;
   };
   
@@ -21,5 +21,5 @@ export type JwtType = {
     password: string;
     name: string;
     avatar: string;
-    role: 'user';
+    role: 'customer';
   }

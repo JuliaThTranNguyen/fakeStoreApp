@@ -8,7 +8,8 @@ import {
 } from '../../../hooks/useStatusSelection';
 import defaultBackgroundColor from '../layout/defaultBackgroundColor';
 
-const StyledStatusBar = styled(Box)<{ state: UseFormStateType }>`
+
+const StyledAuthStatus = styled(Box)<{ state: UseFormStateType }>`
   height: 2em;
   display: flex;
   align-items: center;
@@ -29,4 +30,4 @@ const StyledStatusBar = styled(Box)<{ state: UseFormStateType }>`
   }};
 `;
 
-export default StyledStatusBar;
+export default StyledAuthStatus;

@@ -1,27 +1,29 @@
 import { Box, styled } from '@mui/material';
 import defaultBackgroundColor from '../layout/defaultBackgroundColor';
 
-const StyledProductForm = styled(Box)`
+const StyledAuthForm = styled(Box)`
   background-color: ${({ theme }) => defaultBackgroundColor(theme)};
   border-radius: 1em;
 
   form {
     padding: 2em;
-  }
-
-  .section {
     display: flex;
     flex-direction: column;
   }
 
-  .image-preview {
-    background: ${({ theme }) => defaultBackgroundColor(theme, 2)};
-    width: 100px;
-    height: 100px;
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    margin-left: 1em;
     object-fit: contain;
-    margin-right: 1em;
-    margin-bottom: 1em;
   }
 `;
 
-export default StyledProductForm;
+export default StyledAuthForm;

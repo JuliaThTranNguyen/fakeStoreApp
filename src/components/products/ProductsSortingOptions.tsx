@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { ProductsSortingOption } from '../../types/product';
 import { RootState } from '../../redux/store';
-import Title from '../../commons/styles/Title';
+import Title from '../../commons/styles/layout/Title';
 import StyledFilterContainer from '../../commons/styles/products/StyledFilterContainer';
 import { selectSort, setSort } from '../../redux/reducers/productsSlice';
 

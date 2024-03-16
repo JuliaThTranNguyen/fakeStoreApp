@@ -1,11 +1,10 @@
 import { Box, Container, useTheme } from '@mui/material';
 
-import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
-import StoreIcon from '@mui/icons-material/Store';
-
-import ThemeSwitch from './ThemeSwitch';
 import CartIcon from '../cart/CartIcon';
 import CartOverlay from '../cart/CartOverlay';
+import UserIcon from '../authentication/UserIcon';
+import AppLogo from './AppLogo';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Header() {
   const theme = useTheme();
@@ -21,16 +20,16 @@ export default function Header() {
             justifyContent: 'space-between',
           }}
         >
-          <StoreIcon />
+          <AppLogo />
           <Box
             sx={{
               display: 'flex',
               alignItems: 'center',
             }}
           >
-            <ThemeSwitch />
+            <ThemeSwitcher />
             <CartIcon />
-            <SettingsAccessibilityIcon />
+            <UserIcon />
           </Box>
         </Box>
       </Container>

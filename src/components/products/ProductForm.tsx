@@ -21,7 +21,7 @@ import CategoryOptions from "../categories/CategoryOptions";
 import handleAsyncProcess from "../../commons/utils/product/handleAsyncProcess";
 import StyledProductForm from "../../commons/styles/products/StyledProductForm";
 import StyledStatusBar from "../../commons/styles/products/StyledStatusBar";
-import Title from "../../commons/styles/Title";
+import Title from "../../commons/styles/layout/Title";
 import { CreateProductType } from "../../types/product";
 
 type Props = {
